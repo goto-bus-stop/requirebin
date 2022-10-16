@@ -7,17 +7,7 @@
     "build": "browserify embed.js -o embed-bundle.js && browserify embed2.js -o embed-bundle-v2.js && browserify index.js -o bundle.js --debug",
     "minify": "cat bundle.js | uglifyjs -o bundle.js",
     "modifyconfig": "sed -i '.bak' 's/envs.dev/envs.production/' config.js && rm config.js.bak",
-    "deploy": "standard && gh-pages-deploy",
     "test": "standard"
-  },
-  "gh-pages-deploy": {
-    "cname": "requirebin.com",
-    "prep": [
-      "modifyconfig",
-      "build",
-      "minify"
-    ],
-    "noprompt": false
   },
   "standard": {
     "ignore": [
@@ -52,7 +42,6 @@
     "browserify": "^13.0.0",
     "codemirror": "^5.0.0",
     "extend": "^2.0.0",
-    "gh-pages-deploy": "^0.3.0",
     "standard": "^5.0.0",
     "wzrd": "^1.3.1"
   }
