@@ -9,7 +9,7 @@ var request = require('browser-request')
 var detective = require('detective')
 var keydown = require('keydown')
 
-var uglify = require('uglify-js')
+var uglify = require('terser')
 var cookie = require('./lib/cookie')
 var Gist = require('./lib/github-gist.js')
 var ui = require('./lib/ui-controller')
