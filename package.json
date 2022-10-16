@@ -30,8 +30,10 @@
     "github-oauth": "0.0.4",
     "iframe": "^0.3.1",
     "javascript-editor": "^1.0.3",
+    "jquery": "^3.6.1",
     "jsonp": "0.0.3",
     "keydown": "~0.0.3",
+    "magnific-popup": "^1.1.0",
     "nets": "^1.0.0",
     "terser": "^5.15.1"
   },

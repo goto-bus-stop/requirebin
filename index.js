@@ -1,5 +1,6 @@
 // explicity list globals here
 var $ = window.$
+require('magnific-popup')
 
 var config = require('./config')
 var elementClass = require('element-class')
